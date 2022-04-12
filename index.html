@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game | guess the number</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
     <link rel="shortcut icon" href="img/icons8-game-16.png" type="image/x-icon">
 </head>
 <body>
    <div class="center">
        <div class="card">
-           <h3 class="heading">Guess The Number ?</h3>
+           <h3 class="heading">Guess The Number (1-20) ?</h3>
             <div class="score-card">
                 <div class="scores">
                     <p class="score">Score : <span class="update-score">0</span></p>
-                <p class="high-score"> High Score : <span class="update-highscore">0</span></p>
+                <p class="high-score"> High Score : <span class="update-highscore">20</span></p>
                 </div>
                 <div class="counts">
                     <p>🏆 </p>
@@ -30,6 +30,9 @@
             <div class="play-control">
                 <input type="text" placeholder="Your Number" class="input-number">
                 <button class="btn-guess guess">Guess</button>
+            </div>
+            <div class="num-comp">
+                <p class="result-comparision">Checking your number</p>
             </div>
        </div>
    </div>
